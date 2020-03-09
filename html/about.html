@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Muzz Tech Bytes | About</title>
+</head>
+
+<body>
+  <header><img src="/images/full-logo.png" alt="Muzz Tech Bytes" /></header>
+  <!--start top navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: red;">
+    <a class="navbar-brand" href="../index.html">MTB<img src="/images/logo.png" alt="MTB Logo" style="width: 50px; height: auto;" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tech Articles
+              </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="ms-sc.html">How turn off Social Connector in Microsoft Outlook</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="reddit.html">Top Reddit Tech Articles</a>
+              </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--End top navbar-->
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <!---left column-->
+      </div>
+      <div class="col-md-auto">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <h2 style="text-align: center;">About Me</h2>
+        <div class="card bg-danger text-white" style="width: 36rem;">
+          <div class="card-body">
+            <p class="card-text">Hi! My name is Ben Muzzy and I am a lover of technology. I had worked in technology my whole adult career and absolutely loved it. Even with having Cerebral Palsy I was able to work in several areas of IT including helpdesk, desktop support,
+              network administration, and even software development/quality assurance.</p>
+            <p>In 2019 though I was diagnosed with a second neurological condition called Functional Neurological Disorder. This condiition has affected my life on so many different levels and the worst part is there is no cure.</p>
+            <p>My FND has gotten so bad I'm unable to perform required job duties at any company, so I decided to create this site to help spread my love of tech to all of you and hopefully help some of you with your tech problems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-2">
+        <!--right column-->
+      </div>
+       <footer class="container">
+        <p>&copy; Muzz Tech Bytes 2020</p>
+      </footer>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

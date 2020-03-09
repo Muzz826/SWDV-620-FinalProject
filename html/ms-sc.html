@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Muzz Tech Bytes | How turn off Social Connector in Outlook </title>
+</head>
+
+<body>
+  <header><img src="/images/full-logo.png" alt="Muzz Tech Bytes" /></header>
+  <!--start top navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: red;">
+    <a class="navbar-brand" href="../index.html">MTB<img src="/images/logo.png" alt="MTB Logo" style="width: 50px; height: auto;" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tech Articles
+              </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item active" href="ms-sc.html">How turn off Social Connector in Microsoft Outlook <span class="sr-only">(current)</span></a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="reddit.html">Top Reddit Tech Articles</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!--End top navbar-->
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <!---left column-->
+      </div>
+      <div class="col-md-auto">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <h2 style="text-align: center;">How to Turn off Social Connector in Microsoft Outlook</h2>
+        <p style="text-align: justify;">I've talked to several people that find the Microsoft Office Social Connector to be an annoyance on the bottom of their screen as it tends up to take up needed space especially on smaller screens (mostly referring to laptops).</p>
+        <p><ol> 
+        <li>Click on File --> Options</li>
+        <li>On the Outlook Options screen click on Add-Ins</li>
+        <li>Next you'll want to click on the Go... button located on bottom middle of the screen (see red arrow).</li><br />
+        <img src="/images/outlook-options.png" alt="Microsoft Outlook Options" /><br />
+        <li>On the last screen that opens you'll just need to take the checkmark out of the check box for the Microsoft Social Connector and then click OK.</li><br />
+        <img src="/images/outlook-coms.png" alt="Microsoft Outlook Coms" /><br />
+        <li>Once you've done this you'll see that the Social Connector is gone and you'll now have a little more reading room when going through emails.<br />
+          Note: The COM Add-ins screen is also a great place to either turn on or off other add-ins for Microsoft Office.</li>
+      </ol></p> 
+      
+      </div>
+      <div class="col col-lg-2">
+        <!--right column-->
+      </div>
+      <footer class="container">
+        <p>&copy; Muzz Tech Bytes 2020</p>
+      </footer>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
